@@ -47,7 +47,7 @@ public class WebController {
         return "redirect:/web/";
     }
 
-    @GetMapping("/web/{id}/edit")
+    @GetMapping("{id}/edit")
     public String mostrarFormularioEdicion(@PathVariable String id, Model model) {
         Hotel hotel = hotelRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("ID de hotel no válido: " + id));
@@ -57,12 +57,13 @@ public class WebController {
 
 
 
-    @PutMapping("/web/{id}/edit")
+
+    @PutMapping("{id}/edit")
     public String actualizarHotel(@PathVariable String id, @ModelAttribute Hotel hotel) {
         Hotel hotelExistente = hotelRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("ID de hotel no válido: " + id));
 
-        // Actualizar solo los campos que vienen en el formulario
+        // Actualizar campos
         hotelExistente.setNombre(hotel.getNombre());
         hotelExistente.setCiudad(hotel.getCiudad());
         hotelExistente.setPais(hotel.getPais());
@@ -70,11 +71,10 @@ public class WebController {
         hotelExistente.setPrecioPorNoche(hotel.getPrecioPorNoche());
         hotelExistente.setTelefono(hotel.getTelefono());
 
-        hotelRepository.save(hotelExistente);  // Guarda la actualización
+        hotelRepository.save(hotelExistente);  // Guarda el hotel actualizado
 
         return "redirect:/web/";  // Redirige al listado de hoteles
     }
-
 
 
 }

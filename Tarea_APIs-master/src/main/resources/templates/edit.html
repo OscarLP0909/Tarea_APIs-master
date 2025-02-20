@@ -10,8 +10,7 @@
 
 <h1>Editar Hotel</h1>
 
-<form th:action="@{'/web/' + ${hotel._id}}" method="post" th:object="${hotel}" class="hotel-form">
-    <!-- Emula un método PUT -->
+<form th:action="@{'/web/' + ${hotel._id} + '/edit'}" method="post" th:object="${hotel}" class="hotel-form">
     <input type="hidden" name="_method" value="put"/>
 
     <label for="nombre">Nombre:</label>
