@@ -24,11 +24,12 @@ h1 {
 }
 
 .hotel-form input {
-    width: 100%;
+    width: auto;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .hotel-form button {
@@ -50,7 +51,8 @@ h1 {
     text-align: center;
     margin-top: 20px;
     text-decoration: none;
-    color: #007BFF;
+    background-color: #007BFF;
+    color: white;
 }
 
 .back-link:hover {

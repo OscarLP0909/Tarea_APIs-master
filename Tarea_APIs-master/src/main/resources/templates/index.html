@@ -16,7 +16,7 @@
 <ul>
     <li th:each="hotel:${hoteles}">
         <a th:href="@{'/web/'+${hotel._id}}">
-            <h4 th:text="${hotel.nombre}"></h4>
+            <h2 th:text="${hotel.nombre}"></h2>
             <p><strong>Ciudad:</strong> <span th:text="${hotel.ciudad}"></span></p>
             <p><strong>País:</strong> <span th:text="${hotel.pais}"></span></p>
             <p><strong>Estrellas:</strong> <span th:text="${hotel.estrellas}"></span> estrellas</p>
