@@ -6,7 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @Controller
 @RequestMapping("/web")
@@ -71,9 +70,9 @@ public class WebController {
         hotelExistente.setPrecioPorNoche(hotel.getPrecioPorNoche());
         hotelExistente.setTelefono(hotel.getTelefono());
 
-        hotelRepository.save(hotelExistente);  // Guarda el hotel actualizado
+        hotelRepository.save(hotelExistente);
 
-        return "redirect:/web/";  // Redirige al listado de hoteles
+        return "redirect:/web/";
     }
 
 
