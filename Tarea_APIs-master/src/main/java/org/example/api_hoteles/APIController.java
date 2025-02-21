@@ -68,4 +68,14 @@ public class APIController {
         hotelRepository.save(hotel);
         return hotel;
     }
+
+    @GetMapping("/hoteles/{id}")
+    public Hotel findById(@PathVariable String id) {
+        return hotelRepository.findById(id).orElse(null);
+    }
+
+    @GetMapping("/hoteles/estrellas/{estrellas}")
+    public List<Hotel> findByEstrellas(@PathVariable Integer estrellas) {
+        return hotelRepository.findHotelesByEstrellas(estrellas);
+    }
 }

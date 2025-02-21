@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="HttpClientEndpointsTabState">
-    <option name="requestToText" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;24c351c5aa710e814e8c081b6961ac5a625aa4fe&quot; value=&quot;###&amp;#10;GET http://localhost:8080/web/{{id}}&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
+    <option name="requestToText" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;17975e7cf11f950c76b5573fea88abc1bef03e9e&quot; value=&quot;###&amp;#10;GET http://localhost:8080/api/hoteles/estrellas/4&quot; /&gt;&#10;  &lt;entry key=&quot;eceea55e9781e2e5b31d16a8db0a41ba29bf483f&quot; value=&quot;###&amp;#10;GET http://localhost:8080/api/estrellas/3&quot; /&gt;&#10;  &lt;entry key=&quot;bd4bdf18ba0563de534c80519106f9d797d55ddc&quot; value=&quot;###&amp;#10;GET http://localhost:8080/api/hoteles&quot; /&gt;&#10;  &lt;entry key=&quot;ecf6033407c8d7089a171ed2ae60fcafb84f9dac&quot; value=&quot;###&amp;#10;GET http://localhost:8080/api/hoteles/hotel1&quot; /&gt;&#10;  &lt;entry key=&quot;24c351c5aa710e814e8c081b6961ac5a625aa4fe&quot; value=&quot;###&amp;#10;GET http://localhost:8080/web/{{id}}&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
   </component>
 </project>
