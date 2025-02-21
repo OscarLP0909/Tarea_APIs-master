@@ -2,7 +2,16 @@
 
 <p>En esta tarea he elegido hacerlo sobre los hoteles, para ello, he creado en MongoDB una nueva base de datos llamada hoteles y en ella creado una colección del mismo nombre.
 
-He utilizado las columnas de _id, nombre, ciudad, país, estrellas, precioPorNoche y telefono.
+He utilizado las columnas de:
+<ol>
+<li>_id</li> 
+<li>nombre</li>
+<li>ciudad</li>
+<li>país</li>
+<li>estrellas</li>
+<li>precioPorNoche</li>
+<li>telefono</li>
+</ol>
 
 Una vez creado los elementos, me puse a configurar el SpringBoot en mi proyecto, una vez configurado, he procedido con la creación de los Endpoints.</p>
 
