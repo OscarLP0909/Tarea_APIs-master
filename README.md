@@ -38,3 +38,19 @@ He creado los siguientes:
 - <strong><i>/api/hoteles [GET]</i></strong> : Obtenemos en formato JSON la lista de hoteles que tengamos en la base de datos.
 
 ![image](https://github.com/user-attachments/assets/4a5ad19e-f928-4ac4-8991-21a5c38f66b8)
+
+
+
+
+- <strong><i>/api/hoteles/estrellas/{estrellas} [GET]</i></strong> : En formato JSON obtenemos los hoteles que tengan la cantidad de estrellas que especificamos.
+
+![image](https://github.com/user-attachments/assets/34b07064-1dfb-4e2f-b8cf-70878a7644be)
+
+
+
+
+
+- <strong><i>/api/hoteles/{id} [GET]</i></strong> : Un JSON que nos muestra el hotel con el ID que pongamos en el URI.
+
+![image](https://github.com/user-attachments/assets/e2744666-5c77-49ad-8311-6e91484bdc6e)
+
