@@ -69,13 +69,32 @@ public class APIController {
         return hotel;
     }
 
+    /**
+     * Busca un hotel por su identificador único.
+     * <p>
+     * Endpoint: <strong>GET /api/hoteles/{id}</strong>
+     * </p>
+     *
+     * @param id el identificador único del hotel a buscar.
+     * @return el objeto {@link Hotel} correspondiente al ID proporcionado, o {@code null} si no se encuentra.
+     */
     @GetMapping("/hoteles/{id}")
     public Hotel findById(@PathVariable String id) {
         return hotelRepository.findById(id).orElse(null);
     }
 
+    /**
+     * Obtiene una lista de hoteles filtrados por el número de estrellas.
+     * <p>
+     * Endpoint: <strong>GET /api/hoteles/estrellas/{estrellas}</strong>
+     * </p>
+     *
+     * @param estrellas el número de estrellas por el cual filtrar los hoteles.
+     * @return una lista de objetos {@link Hotel} que tienen el número de estrellas especificado.
+     */
     @GetMapping("/hoteles/estrellas/{estrellas}")
     public List<Hotel> findByEstrellas(@PathVariable Integer estrellas) {
         return hotelRepository.findHotelesByEstrellas(estrellas);
     }
+
 }
