@@ -13,21 +13,22 @@ He utilizado las columnas de:
 <li>telefono</li>
 </ol>
 
-Una vez creado los elementos, me puse a configurar el SpringBoot en mi proyecto, una vez configurado, he procedido con la creación de los Endpoints.</p>
+<p>Una vez creado los elementos, me puse a configurar el SpringBoot en mi proyecto, una vez configurado, he procedido con la creación de los Endpoints.</p>
 
 He creado los siguientes:
-- <strong><i>web/ [GET]</i></strong> : En este Endpoint, junto con los archivos html y css, hacemos que nos aparezca una lista con todos los hoteles que haya en la base de datos.
+<ul>
+<li><strong><i> web/ [GET]</i></strong>En este Endpoint, junto con los archivos html y css, hacemos que nos aparezca una lista con todos los hoteles que haya en la base de datos.</li>
 
 ![image](https://github.com/user-attachments/assets/b00319ec-236d-463d-abc2-759a3e1fd9ca)
   
 
-- <strong><i>/web/new [GET]</i></strong> : Aquí, generamos un formulario para que se cree un nuevo hotel.
+<li><strong><i>/web/new [GET]</i></strong></li>Aquí, generamos un formulario para que se cree un nuevo hotel.
 
 ![image](https://github.com/user-attachments/assets/d5b9f812-44dc-49f9-8c58-a2944e180d0d)
 
-- <strong><i>/web/new [POST]</i></strong> : Esto nos sirve para guardar el hotel que hayamos creado y almacenarelo en la base de datos.
+<li><strong><i>/web/new [POST]</i></strong></li>  Esto nos sirve para guardar el hotel que hayamos creado y almacenarelo en la base de datos.
 
-- <strong><i>/web/{id} [GET]</i></strong>: Con este Endpoint obtenemos un hotel en concreto a través de su id.
+<li><strong><i>/web/{id} [GET]</i></strong></li> Con este Endpoint obtenemos un hotel en concreto a través de su id.
 
 ![image](https://github.com/user-attachments/assets/ca934c5a-ff2c-4bf5-95b1-3011fe6ba021)
 
@@ -62,4 +63,4 @@ He creado los siguientes:
 - <strong><i>/api/hoteles/{id} [GET]</i></strong> : Un JSON que nos muestra el hotel con el ID que pongamos en el URI.
 
 ![image](https://github.com/user-attachments/assets/e2744666-5c77-49ad-8311-6e91484bdc6e)
-
+</ul>
