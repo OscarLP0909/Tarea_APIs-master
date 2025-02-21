@@ -33,38 +33,34 @@ h1 {
 }
 
 .hotel-form button {
-    display: block;
-    width: 200px;
+    width: 45%;
     padding: 10px;
-    margin: 10px 0 0 27.5%;
+    margin: 10px 0 0 27%;
     align-items: center;
+    font-weight: bold;
     background-color: #4CAF50;
     color: white;
-    font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 
 }
 
 .hotel-form button:hover {
     background-color: #45a049;
-
 }
 
 .back-link {
     display: block;
     width: 200px;
     text-align: center;
+    margin:  20px auto;
     padding: 10px;
-    margin: 10px auto;
-    align-items: center;
-    background-color:#007BFF;
-    color: white;
-    font-weight: bold;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
+    font-weight: bold;
+    background-color: #007BFF;
+    color: white;
 }
 
 .back-link:hover {
