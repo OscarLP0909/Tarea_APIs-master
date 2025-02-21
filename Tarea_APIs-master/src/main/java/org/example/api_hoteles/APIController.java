@@ -90,7 +90,7 @@ public class APIController {
      * </p>
      *
      * @param estrellas el número de estrellas por el cual filtrar los hoteles.
-     * @return una lista de objetos {@link Hotel} que tienen el número de estrellas especificado.
+     * @return una lista de objetos {@link Hotel} que tienen el número de estrellas escrito.
      */
     @GetMapping("/hoteles/estrellas/{estrellas}")
     public List<Hotel> findByEstrellas(@PathVariable Integer estrellas) {
